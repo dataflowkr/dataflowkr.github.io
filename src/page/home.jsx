@@ -2,7 +2,7 @@ import React from 'react'
 import InputBox from '../components/input'
 import './home.css'
 
-export default function Home() {
+export default function Home({nextPage}) {
     return (
         <div style={{
             display: 'flex',
@@ -15,7 +15,7 @@ export default function Home() {
             marginTop: '80px',
         }}>
             <img src="/sample.png" style={{borderRadius:'10px'}} />
-            <InputBox />
+            <InputBox nextPage={nextPage} />
             <div className="tag">
                 <h3># 자율주행</h3>
                 <h3># 챗봇 데이터</h3>

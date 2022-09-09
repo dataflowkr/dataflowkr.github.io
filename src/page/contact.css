@@ -1,0 +1,33 @@
+.contactPage {
+    position: relative;
+    margin: 20% 10%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row; 
+    gap: 10%;
+}
+
+.contactPage .about {
+    width: 45%;
+}
+
+.contactPage .about .title {
+    font-family:"Nanum Gothic";
+    font-style:normal; 
+    font-weight:800; 
+    color: rgb(34, 34, 34); 
+    font-size:36px; 
+    letter-spacing:-1.5px;
+
+    margin-bottom: 20px;
+}
+
+.contactPage .about .desc {
+    font-family:"Nanum Gothic";
+    font-style:normal; 
+    font-weight:400; 
+    color: rgb(102, 102, 102); 
+    font-size:24px; 
+    letter-spacing:-0.8px;
+}

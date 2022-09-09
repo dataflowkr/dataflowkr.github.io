@@ -1,0 +1,12 @@
+.classifyPage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}

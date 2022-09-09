@@ -1,0 +1,31 @@
+.classifyCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.classifyCard .image {
+    border-radius: 20px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 40px;
+    /*width: 100%;*/
+}
+
+.classifyCard .title {
+    font-family:"Nanum Gothic", serif;
+    font-style:normal; 
+    font-weight:800;
+    color:rgb(51, 51, 51);
+    font-size:32px; 
+    letter-spacing:-1px;
+    margin-bottom: 20px;
+}
+
+.classifyCard .desc {
+    font-family:"Nanum Square", sans-serif; 
+    font-style:normal; 
+    font-weight:400;
+    color:rgb(136, 136,136); 
+    font-size:24px; 
+    letter-spacing:-1px;
+}

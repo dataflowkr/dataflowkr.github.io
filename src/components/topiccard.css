@@ -1,0 +1,15 @@
+.topicCard {
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(248, 248, 248);
+    border-radius: 20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 20px;
+    height: min-content;
+    overflow: visible;
+    padding: 20px 30px 20px 20px;
+    position: relative;
+    width: 80%;
+}
