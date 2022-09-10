@@ -13,9 +13,13 @@ function App() {
   const nextPage = () => {
     setPage(page + 1)
   }
+  const prevPage = () => {
+    setPage(page - 1)
+  }
 
   return (
     <div className="App">
+      {page !== 0 ? <img src="/next.svg" style={backStyle} onClick={prevPage}/> : ''}
       {page === 0 ? <Home nextPage={nextPage} />: ''}
       {page === 1 ? <Classify nextPage={nextPage} />: ''}
       {page === 2 ? <Topic nextPage={nextPage} />: ''}
@@ -27,3 +31,12 @@ function App() {
 }
 
 export default App;
+
+const backStyle = {
+  transform: "scale(-1, 1)",
+  position: 'absolute',
+  left: "30px",
+  top: "30px",
+  width: "32px",
+  height: '32px',
+}

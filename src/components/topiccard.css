@@ -12,4 +12,33 @@
     padding: 20px 30px 20px 20px;
     position: relative;
     width: 80%;
+    
+    text-align: left;
+}
+
+.topicCard .buttonIcon {    
+    user-select: none;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    fill: rgb(0, 204, 255);
+    flex-shrink: 0;
+    cursor: auto;
+}
+
+.topicCard .cardTitle {    
+    font-family:"NanumSquare", sans-serif;
+    font-style:normal; 
+    font-weight:800;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.topicCard .desc {    
+    font-family:"NanumSquare", sans-serif;
+    font-style:normal; 
+    font-weight:500;
+    color:rgb(136, 136, 136);
+    font-size: 16px;
+    margin-bottom: 8px;
 }

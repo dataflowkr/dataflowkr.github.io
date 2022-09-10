@@ -1,3 +1,26 @@
+.searchResult .header {
+    margin: 40px 0px 40px 0px;
+    font-family:"Nanum Gothic", serif; 
+    font-weight:800;
+    color:rgb(51, 51, 51); 
+    font-size:36px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
 .searchResult .title {
-    font-family: "Nanum Gothic", serif;
+    font-size: 28px;
+    padding-top: 8px;
+}
+
+.searchResult .keyword {
+    color: rgb(119, 119, 119);
+}
+
+.searchResult .tableBox {
+    box-shadow: 4px 4px 8px #eee;
+    border-radius: 10px;
 }

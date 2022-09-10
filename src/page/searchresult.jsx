@@ -5,13 +5,17 @@ import './searchresult.css'
 export default function SearchResult({nextPage}) {
     const cnt = 5
     return <div className="searchResult">
-        <div className="title">{cnt} Search results of <div>road traffic data</div> </div>
-        <div style={{width: '80%', top: '20%', left:'10%'}}>
+        <div className="header">
+            <div className="title">{cnt} Search results of </div>
+            <div className="keyword">road traffic data</div>
+        </div>
+        <div className="tableBox" style={{width: '80%', top: '20%', left:'10%', position: 'relative'}}>
             <DataTable
                 columns={columns}
                 data={data}
                 conditionalRowStyles={conditionalRowStyles}
-                onRowClicked={(row, e) => onRowClicked(row, e, nextPage)}/>
+                onRowClicked={(row, e) => onRowClicked(row, e, nextPage)}
+                customStyles={customStyles} />
         </div>
     </div>
 }
@@ -62,7 +66,7 @@ const data = [
 
 const conditionalRowStyles = [
     {
-      when: row => row.id % 2 === 1,
+      when: row => row.id % 2 === 0,
       style: {
         backgroundColor: '#eee',
         color: 'black',
@@ -77,3 +81,30 @@ const conditionalRowStyles = [
     //   style: row => ({ backgroundColor: row.isSpecial ? 'pink' : 'inerit' }),
     // },
 ]
+
+const customStyles = {
+    rows: {
+        style: {
+            minHeight: '72px', // override the row height
+            fontSize: '20px',
+            padding: '10px',
+        },
+    },
+    headCells: {
+        style: {
+            minHeight: '72px', // override the row height
+            backgroundColor: '#eee',
+            fontWeight: 800,
+            paddingLeft: '8px', // override the cell padding for head cells
+            paddingRight: '8px',
+            fontSize: '20px',
+            padding: '20px',
+        },
+    },
+    cells: {
+        style: {
+            paddingLeft: '8px', // override the cell padding for data cells
+            paddingRight: '8px',
+        },
+    },
+}
