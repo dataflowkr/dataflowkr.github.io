@@ -10,11 +10,10 @@ export default function Home({nextPage}) {
             transform: 'translate(-50%, 0%)',
             position: 'absolute',
             left: '50%',
-            width: '70%',
+            width: '60%',
             gap: '40px',
-            marginTop: '80px',
         }}>
-            <img src="/sample.png" style={{borderRadius:'10px'}} />
+            <img className="main" src="/auto.jpeg" style={{borderRadius:'10px', scale: '0.8'}} />
             <InputBox nextPage={nextPage} />
             <div className="tag">
                 <h3># 자율주행</h3>

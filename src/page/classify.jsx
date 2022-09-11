@@ -7,18 +7,18 @@ export default function TopicPage({nextPage}) {
     return (<div className="classifyPage">
         <ClassifyCard 
             nextPage={nextPage}
-            imgUrl={"/board.webp"}
+            imgUrl={"/optimized.jpeg"}
             title={"최적화"}
             desc={"4년간 수집한 데이터셋"} />
         <ClassifyCard 
             nextPage={nextPage}
-            imgUrl={"/board.webp"}
-            title={"최적화"}
+            imgUrl={"/private.jpeg"}
+            title={"개인"}
             desc={"4년간 수집한 데이터셋"} />
         <ClassifyCard 
             nextPage={nextPage}
-            imgUrl={"/board.webp"}
-            title={"최적화"}
+            imgUrl={"/open.jpeg"}
+            title={"오픈"}
             desc={"4년간 수집한 데이터셋"} />
     </div>)
 }
