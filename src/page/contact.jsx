@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="form">
         <div className="title">What's your price?</div>
             <Slider
-                style={{marginBottom: "50px"}}
+                style={{marginBottom: "50px", minWidth: '250px'}}
                 min={10}
                 max={50}
                 step={10}

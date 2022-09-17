@@ -41,13 +41,15 @@
 .contactPage .form {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     width: 50%;
+    align-items: center;
 }
 
 .contactPage .form .input {
     -webkit-appearance:none;
-    width: calc(100%-30px);
+    width: 100%;
+    min-width: 250px;
     line-height:1.4em;
     outline:none;
     border:none;
@@ -79,6 +81,7 @@
 .contactPage .form .button {
     appearance: none;
     width: 100%;
+    min-width: 250px;
     line-height: 1.4em;
     outline: none;
     border: none;

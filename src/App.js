@@ -18,8 +18,7 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {page !== 0 ? <img src="/next.svg" style={backStyle} onClick={prevPage}/> : ''}
+    <div className="App" style={{width: '100vw', height: '100vh', overflowX: 'hidden', overflowY: 'scroll'}}>
       {page === 0 ? <Home nextPage={nextPage} />: ''}
       {page === 1 ? <Classify nextPage={nextPage} />: ''}
       {page === 2 ? <Segment nextPage={nextPage} />: ''}

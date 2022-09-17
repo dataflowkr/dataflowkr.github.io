@@ -11,10 +11,11 @@ export default function Home({nextPage}) {
             position: 'absolute',
             left: '50%',
             top: '50%',
-            width: '60%',
+            width: '70%',
+            maxWidth: '600px',
             gap: '40px',
         }}>
-            <img className="main" src="/auto.jpeg" />
+            <img className="main" src="/auto.png" />
             <InputBox nextPage={nextPage} />
         </div>
     )
