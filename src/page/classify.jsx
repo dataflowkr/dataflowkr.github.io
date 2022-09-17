@@ -9,16 +9,16 @@ export default function TopicPage({nextPage}) {
             nextPage={nextPage}
             imgUrl={"/optimized.jpeg"}
             title={"최적화"}
-            desc={"4년간 수집한 데이터셋"} />
+            desc={"AI 모델을 위해 최적화된 데이터셋"} />
         <ClassifyCard 
             nextPage={nextPage}
             imgUrl={"/private.jpeg"}
             title={"개인"}
-            desc={"4년간 수집한 데이터셋"} />
+            desc={"1년간 수집한 데이터셋"} />
         <ClassifyCard 
             nextPage={nextPage}
             imgUrl={"/open.jpeg"}
             title={"오픈"}
-            desc={"4년간 수집한 데이터셋"} />
+            desc={"서울시 오픈 데이터셋"} />
     </div>)
 }

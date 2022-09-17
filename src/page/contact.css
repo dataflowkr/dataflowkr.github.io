@@ -1,15 +1,19 @@
 .contactPage {
     position: relative;
-    margin: 20% 10%;
-    width: 80%;
+    margin: 15% 10%;
+    width: 85%;
 
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10%;
 }
 
 .contactPage .about {
     width: 35%;
+    min-width: 230px;
+    margin-bottom: 50px;
 }
 
 .contactPage .about .title {
@@ -27,7 +31,7 @@
     font-family:"Nanum Gothic";
     font-weight:500; 
     color: rgb(102, 102, 102); 
-    font-size:24px; 
+    font-size:1.2rem; 
     letter-spacing:-0.8px;
     word-spacing: 2px;
     line-height: 140%;
@@ -59,6 +63,18 @@
     height: 24px;
     padding: 15px;
 }
+
+.contactPage .form .title {
+    font-family:"Nanum Gothic";
+    font-weight:800; 
+    color: rgb(34, 34, 34); 
+    font-size:24px; 
+    letter-spacing:-1.5px;
+
+    margin-bottom: 20px;
+    text-align: left;
+}
+
 
 .contactPage .form .button {
     appearance: none;

@@ -1,14 +1,15 @@
 .inputBox {
     -webkit-appearance:none;
-    width: calc(100% - 60px);
-    line-height:1.4em;
+    width: calc(100% - 60px - 4rem);
+    min-width: 240px;
+    line-height:24px;
     outline:none;
     border:none;
-    padding:15px;
+    padding:0.8rem;
     border-radius:10px;
     font-family:"Nanum Gothic";
     font-weight:400;
-    font-size:16px;
+    font-size:1rem;
     background:var(--token-4d9f5977-62c4-4fc8-9ac9-8e44115892c8, rgb(250, 250, 250)) /* {"name":"Plane"} */;
     color:var(--token-6a498dd2-32cd-4929-9ba2-df02fe315602, rgb(34, 34, 34)) /* {"name":"Text"} */;
     box-shadow:inset 0 0 0 1px transparent;    
@@ -17,15 +18,15 @@
 .inputSubmit {
     appearance: none;
     width: 70px;
-    line-height: 1.4em;
+    line-height: 1.4rem;
     outline: none;
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    padding: 15px;
+    padding:0.8rem;
     font-family:"Nanum Gothic";
     font-weight: 600;
-    font-size: 16px; 
+    font-size: 16px;
     background: var(--token-265a51b5-06ea-48da-a42e-3d51fcd0756d, rgb(0, 153, 255));
     color: rgb(255, 255, 255);
     z-index: 1;
